@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #300E04;
+    --secondary-color: #DFB691;
+    --highlight-color: #892A00;
+    --font-family: 'Roboto', Arial, sans-serif;
+    font-family: var(--font-family);
+
+}
+html, body{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.sign-up-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left-section{
+    flex: 0 0 30vw;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.right-section{
+    flex: 1;
+    min-width: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.form, .heading-area, .register-area{
+  width: auto;
+}
+header{
+    width: 100%;
+    text-align: center;
+
+}
+.form-div{
+    height: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    box-shadow: 5px 8px black;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100%;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+}
+.field input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+}
+.heading-area{
+    height: 100%;
+    padding: 40px;
+    background-color: var(--secondary-color);
+}
+.register-area{
+    height: 100%;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-account-btn{
+    margin-top: 20px;
+    width: 200px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: var(--highlight-color);
+    color: white;
+    font-size: 16px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+.create-account-btn:active{
+    background-color: var(--primary-color);
+}
+p{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: var(--highlight-color);
+}
